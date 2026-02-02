@@ -1,5 +1,30 @@
-.terraform/
+# --- TERRAFORM STATE ---
 *.tfstate
 *.tfstate.*
+crash.log
+
+# --- TERRAFORM WORKING DIR ---
+.terraform/
 .terraform.lock.hcl
+
+# --- SENSITIVE VARIABLES ---
+*.tfvars
+*.tfvars.json
+
+# --- PROVIDER PLUGINS / EXECUTABLES ---
 *.exe
+*.zip
+*.tar.gz
+
+# --- OVERRIDES ---
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# --- LOGS ---
+*.log
+
+# --- OS FILES ---
+.DS_Store
+Thumbs.db
