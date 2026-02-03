@@ -33,11 +33,9 @@ project/
 
 🗂️ ROADMAP — BROKEN INTO PARTS (Your multi‑day plan)
 Each part is a self‑contained milestone.
-You can stop after any part and resume later.
-
 PART 1 — Project Setup & Module Skeletons
 Goal: Build the folder structure, providers, and empty module templates.
-You’ll learn:
+I’ll learn:
 - How to structure a multi‑module project
 - How to pass variables between modules
 - How to keep code clean and reusable
