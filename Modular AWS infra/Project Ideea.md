@@ -1,5 +1,5 @@
 THE PROJECT: “Modular AWS Infrastructure with Compute, Serverless, Database & Monitoring”
-You’ll build a real architecture that includes:
+I’ll build a real architecture that includes:
 - VPC
 - Public & private subnets
 - Internet Gateway & NAT Gateway
@@ -50,7 +50,7 @@ Modules:
 - igw
 - nat
 - route_tables
-You’ll learn:
+I’ll learn:
 - CIDR planning
 - Public vs private subnets
 - NAT vs IGW
@@ -64,7 +64,7 @@ Modules:
 - ec2
 - iam (instance role)
 - security_groups
-You’ll learn:
+I'll learn:
 - Launch templates
 - User data
 - IAM roles for EC2
@@ -72,12 +72,12 @@ You’ll learn:
 - How to expose EC2 via public subnet or ALB (optional)
 
 PART 4 — Lambda Function (Serverless Layer)
-Goal: Deploy your first Lambda function with Terraform.
+Goal: Deploy my first Lambda function with Terraform.
 Modules:
 - lambda
 - iam (lambda execution role)
 - cloudwatch (logs)
-You’ll learn:
+I’ll learn:
 - How Lambda works
 - How to package code (zip)
 - How to attach IAM permissions
@@ -89,7 +89,7 @@ Goal: Deploy a secure RDS instance in private subnets.
 Modules:
 - rds
 - security_groups
-You’ll learn:
+I’ll learn:
 - Subnet groups
 - Parameter groups
 - DB security
@@ -98,20 +98,20 @@ You’ll learn:
 - Why RDS must be private
 
 PART 6 — Monitoring & Alerts
-Goal: Add observability to your system.
+Goal: Add observability to the system.
 Modules:
 - cloudwatch
 - sns
-You’ll learn:
+I’ll learn:
 - CloudWatch metrics
 - Alarms (CPU, status checks, DB connections)
 - SNS notifications (email/SMS)
 - Lambda → SNS alerts
 - EC2 → SNS alerts
-This is where your architecture becomes “production‑like.”
+This is where the architecture becomes “production‑like.”
 
 PART 7 — Optional Extras (Choose Your Adventure)
-You can add any of these:
+I can add any of these:
 Option A — S3 Bucket + Lambda Trigger
 - Upload file → triggers Lambda
 - Lambda processes file
@@ -128,8 +128,8 @@ Option D — VPC Flow Logs
 - Capture traffic logs
 - Store in S3 or CloudWatch
 
-🎯 What you gain from this project
-By the end, you’ll understand:
+🎯 What I gain from this project
+By the end, I’ll understand:
 - How to design a real AWS architecture
 - How to break infrastructure into reusable modules
 - How to manage dependencies cleanly
@@ -137,11 +137,3 @@ By the end, you’ll understand:
 - How to monitor and alert on your system
 - How to structure Terraform like a professional cloud engineer
 This is the kind of project that belongs in a portfolio.
-
-🔥 Ready to begin?
-If you want, we can start with PART 1 right now:
-- Create the folder structure
-- Create empty module templates
-- Set up providers
-- Prepare variables and outputs
-Just say “Let’s start Part 1” and we’ll build it step by step.
