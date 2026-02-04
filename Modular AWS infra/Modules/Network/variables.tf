@@ -1,3 +1,14 @@
+# And this is the first mistake I've done and learned from. In my opinion i've done these variables right but the reality is the fact that I hardcoded them inside the Network Module. 
+#The ideal situation would have been the following in the root main.tf 
+# module "network" {
+#   source = "./modules/network"
+
+#   vpc_cidr             = "10.0.0.0/16"
+#   public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+#   private_subnet_cidrs = ["10.0.11.0/24", "10.0.12.0/24"]
+# }
+
+
 variable "cidr_map" {
     type = map(string)
     default = {
