@@ -3,7 +3,7 @@
 resource "aws_route_table" "public_route" {
   vpc_id = aws_vpc.internet.id
   route {
-    cidr_block = var.cidr_map.anywhere
+    cidr_block = var.cidr_map["anywhere"]
     gateway_id = aws_internet_gateway.internet_igw.id
   }
 }
@@ -14,7 +14,7 @@ resource "aws_route_table" "public_route" {
 resource "aws_route_table" "first_private_route" {
   vpc_id = aws_vpc.internet.id
   route {
-    cidr_block     = var.cidr_map.anywhere
+    cidr_block     = var.cidr_map["anywhere"]
     nat_gateway_id = aws_nat_gateway.NAT_az1.id
   }
 }
@@ -22,7 +22,7 @@ resource "aws_route_table" "first_private_route" {
 resource "aws_route_table" "second_private_route" {
   vpc_id = aws_vpc.internet.id
   route {
-    cidr_block     = var.cidr_map.anywhere
+    cidr_block     = var.cidr_map["anywhere"]
     nat_gateway_id = aws_nat_gateway.NAT_az2.id
   }
 }
